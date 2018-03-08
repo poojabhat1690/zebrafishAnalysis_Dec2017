@@ -1,0 +1,117 @@
+mkdir: cannot create directory ‘/scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta’: File exists
+
+Selected Options:
+	Input file = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+	Using custom gene IDs for GO analysis
+	Parsing FASTA format files...
+	Found 51518 sequences
+	Found 46260 sequences
+
+	Progress: Step4 - removing redundant promoters
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+	Sequences processed:
+		Auto detected maximum sequence length of 21 bp
+		97778 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	4132
+	0.25	1	4540
+	0.3	2	6716
+	0.35	3	9215
+	0.4	4	12385
+	0.45	5	14686
+	0.5	6	16264
+	0.6	7	23229
+	0.7	8	5997
+	0.8	9	585
+	10	10	29
+	Bin	# Targets	# Background	Background Weight
+	0	4114	18	205.229
+	1	4488	52	77.499
+	2	6494	222	26.267
+	3	8095	1120	6.490
+	4	8438	3947	1.920
+	5	7275	7411	0.881
+	6	5601	10663	0.472
+	7	5467	17762	0.276
+	8	1337	4660	0.258
+	9	184	401	0.412
+	10	25	4	5.612
+
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	97778 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	31.63%	31.78%	0.995
+		C	18.37%	18.22%	1.008
+		G	18.37%	18.22%	1.008
+		T	31.63%	31.78%	0.995
+	Autonormalization: 2-mers (16 total)
+		AA	11.49%	11.18%	1.028
+		CA	7.79%	7.23%	1.077
+		GA	5.65%	6.33%	0.892
+		TA	6.39%	6.62%	0.965
+		AC	6.09%	5.11%	1.193
+		CC	3.13%	3.30%	0.948
+		GC	3.57%	3.62%	0.988
+		TC	5.65%	6.33%	0.892
+		AG	5.88%	5.86%	1.003
+		CG	1.71%	1.97%	0.867
+		GG	3.13%	3.30%	0.948
+		TG	7.79%	7.23%	1.077
+		AT	8.28%	9.77%	0.848
+		CT	5.88%	5.86%	1.003
+		GT	6.09%	5.11%	1.193
+		TT	11.49%	11.18%	1.028
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	31.63%	31.49%	1.004
+		C	18.37%	18.51%	0.993
+		G	18.37%	18.51%	0.993
+		T	31.63%	31.49%	1.004
+	Autonormalization: 2-mers (16 total)
+		AA	11.49%	11.24%	1.023
+		CA	7.79%	7.74%	1.006
+		GA	5.65%	5.81%	0.972
+		TA	6.39%	6.32%	1.012
+		AC	6.09%	5.87%	1.038
+		CC	3.13%	3.25%	0.963
+		GC	3.57%	3.70%	0.967
+		TC	5.65%	5.81%	0.972
+		AG	5.88%	5.83%	1.007
+		CG	1.71%	1.79%	0.951
+		GG	3.13%	3.25%	0.963
+		TG	7.79%	7.74%	1.006
+		AT	8.28%	8.71%	0.951
+		CT	5.88%	5.83%	1.007
+		GT	6.09%	5.87%	1.038
+		TT	11.49%	11.24%	1.023
+	Autonormalization: 3-mers (64 total)
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+
+	Reading input files...
+	97778 total sequences read
+	922 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 922 motif(s)
+	|0%                                    50%                                  100%|
+	=========================slurmstepd: error: *** JOB 257593 ON cn-11 CANCELLED AT 2018-03-01T14:23:21 ***

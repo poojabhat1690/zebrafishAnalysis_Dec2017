@@ -1,0 +1,985 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "homer"
+   Try: "module spider homer" to see how to load the module(s).
+
+
+
+mkdir: cannot create directory ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 67554.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 67554.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgfreq.tmp !!!
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.639494673905091.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/0.150570771032111.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/allNoPAS_SLAMdunkExperiment.fasta/group.adj’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences1dpf.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences1dpf.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 314.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 314.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.187842561255337.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/0.525125349945487.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences1dpf.fasta/group.ug.txt’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences256cell.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequences256cell.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences256cell.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 3240.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 3240.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.608986163136677.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequences256cell.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/0.218938005230488.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences256cell.fasta/seq.tsv’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences2cell.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequences2cell.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences2cell.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1592.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 1592.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.814945242458151.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequences2cell.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/0.223062084595771.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2cell.fasta/group.ug.txt’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences2dpf.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences2dpf.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 296.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 296.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.574863258839713.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/0.689231289391504.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences2dpf.fasta/group.ug.txt’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences4dpf.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences4dpf.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 268.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 268.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.177237779923843.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/0.557156493960978.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequences4dpf.fasta/seq.tsv’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequencesbud.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequencesbud.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequencesbud.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 306.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 306.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.890429121998267.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesbud.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/0.942840429562242.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesbud.fasta/group.ug.txt’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequencesdome.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequencesdome.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequencesdome.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1580.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 1580.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.00772891598487035.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesdome.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/0.0304801034080846.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesdome.fasta/seq.tsv’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequencesoocyte.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequencesoocyte.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 1956.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 1956.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.378836225343065.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/0.0679329657732559.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencesoocyte.fasta/group.adj’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequencessphere.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequencessphere.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequencessphere.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 714.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 714.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.348816333196254.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequencessphere.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/group.adj’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/0.172277499529631.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencessphere.fasta/seq.tsv’: No such file or directory
+mkdir: cannot create directory ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta’: No such file or directory
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequencestestis.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /clustertmp/pooja/noPASaccepted_sequencestestis.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequencestestis.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+	Using custom gene IDs for GO analysis
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 529, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 531, <IN> line 218.
+print() on closed filehandle INFO at /software/171020/software/homer/4.9-foss-2017a/bin/findMotifs.pl line 533, <IN> line 218.
+	Parsing FASTA format files...
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq1.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq3.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.seq2.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/seq.tsv: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/group.ug.txt: No such file or directory
+
+	Progress: Step4 - removing redundant promoters
+cp: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/group.ug.txt’: No such file or directory
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+!!! Could not open sequence file /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/seq.tsv !!!
+!!! Couldn't open gc file for writing: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgfreq.tmp !!!
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgbins.tmp: No such file or directory
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/group.adj: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgfreq.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgbins.tmp’: No such file or directory
+
+	Normalizing lower order oligos using homer2
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgfreq.tmp: No such file or directory
+mv: cannot stat ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563cgfreq.tmp’: No such file or directory
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+mkdir: cannot create directory ‘/clustertmp’: Read-only file system
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.153623055757151.motif.2.tmp: No such file or directory
+readline() on closed filehandle IN at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 451.
+Use of uninitialized value in numeric gt (>) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 476.
+Use of uninitialized value $str in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 274.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 275.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 278.
+Use of uninitialized value in split at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 281.
+Use of uninitialized value $percentTargets in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 150.
+Use of uninitialized value $percentBackground in substitution (s///) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 151.
+Use of uninitialized value $percentTargets in multiplication (*) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Use of uninitialized value $numTargets in division (/) at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+Illegal division by zero at /software/171020/software/homer/4.9-foss-2017a/bin/findKnownMotifs.pl line 152.
+
+	Progress: Step8 - De novo motif finding (HOMER)
+!!! Could not open /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/homerMotifs.motifs4 for writing output!!!
+sh: /clustertmp/pooja/noPASaccepted_sequencestestis.fasta/homerMotifs.all.motifs: No such file or directory
+Could not open file: "/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/homerMotifs.all.motifs"
+	Job finished
+
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/seq.tsv’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/0.784044656510563.redun.tmp’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/group.ug.txt’: No such file or directory
+rm: cannot remove ‘/clustertmp/pooja/noPASaccepted_sequencestestis.fasta/group.adj’: No such file or directory

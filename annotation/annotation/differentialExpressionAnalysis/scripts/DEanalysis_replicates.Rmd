@@ -1,0 +1,219 @@
+---
+title: "Reanalysis"
+author: "Pooja Bhat"
+date: "February 27, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r readingInAndCorrelations}
+library(DESeq2)
+library(plyr)
+library(corrplot)
+### reading in the count data from the replicate expreiment 
+
+countData_timeCourse = list.files(path = "/Volumes/groups/ameres/Pooja/Projects/zebrafishAnnotation/sequencingRun_december2017/analysis/annotation/differentialExpressionAnalysis/data/countData//",pattern = ".tsv")
+countData_timeCourse = countData_timeCourse[grep("combinedFile",countData_timeCourse)]
+countData_timeCourse = as.data.frame(countData_timeCourse)
+countData_timeCourse$path = paste0("/Volumes/groups/ameres/Pooja/Projects/zebrafishAnnotation/sequencingRun_december2017/analysis/annotation/differentialExpressionAnalysis/data/countData//",countData_timeCourse$countData_timeCourse)
+
+countData_timeCourse_datasets = lapply(countData_timeCourse$path, function(x) read.table(x,stringsAsFactors = F,header = T,sep="\t"))
+splitNames = unlist(lapply(strsplit(as.character(countData_timeCourse$countData_timeCourse),"_",T),function(x) x[2]))
+countData_timeCourse$barcodes = unlist(lapply(strsplit(splitNames,".",T),function(x) x[1]))
+names(countData_timeCourse_datasets) = countData_timeCourse$barcodes
+
+### reading in the sample information file
+
+sampleInfo = read.table("/Volumes/groups/ameres/Pooja/Projects/zebrafishAnnotation/sequencingRun_december2017/sampleInfo/barcodes_description.txt",sep="\t")
+countData_timeCourse_datasets_names = as.data.frame(names(countData_timeCourse_datasets))
+colnames(countData_timeCourse_datasets_names) = "V2"
+countData_timeCourse_datasets_names = join(countData_timeCourse_datasets_names,sampleInfo)
+names(countData_timeCourse_datasets) = as.character(countData_timeCourse_datasets_names$V3)
+
+
+timepoints = paste0("TP",c(1:9))
+cor_timepoints = vector("list",length(timepoints))
+names(cor_timepoints) = timepoints
+
+for(i in 1:length(timepoints)){
+  countData_timepoint = countData_timeCourse_datasets[grep(timepoints[i],names(countData_timeCourse_datasets))]
+  countData_timepoint_reads = do.call(cbind,lapply(countData_timepoint,function(x) x$ReadsCPM)  )
+  cor_timepoints[[i]] = cor(countData_timepoint_reads,method = "spearman")
+  corrplot(cor_timepoints[[i]],method= "number")
+}
+
+
+
+```
+
+```{r deSeq}
+library("Biobase")
+library("DESeq")
+library("pasilla")
+ 
+
+data_accordingToTime = vector("list",length(timepoints))
+names(data_accordingToTime) = timepoints
+
+for(i in 1:length(timepoints)){
+  countData_timepoint = countData_timeCourse_datasets[grep(timepoints[i],names(countData_timeCourse_datasets))]
+  countData_timepoint_reads = do.call(cbind,lapply(countData_timepoint,function(x) x$ReadCount)  )
+  data_accordingToTime[[i]] = countData_timepoint_reads
+}
+
+dataAccordingToTime = do.call(cbind.data.frame,data_accordingToTime)
+gridExpandTPs = expand.grid(timepoints,timepoints)
+gridExpandTPs_split = split(gridExpandTPs,gridExpandTPs$Var2,T)
+for(i in 1:length(gridExpandTPs_split)){
+  
+  gridExpandTPs_split[[i]] = gridExpandTPs_split[[i]][-c(1:i),]
+  
+}
+
+
+
+
+allCombindations = do.call(rbind,gridExpandTPs_split)
+
+allCombindations$Var1 = as.character(allCombindations$Var1)
+allCombindations$Var2 = as.character(allCombindations$Var2)
+allDEseqResults = vector("list",nrow(allCombindations))
+names(allDEseqResults) = paste(allCombindations$Var1, allCombindations$Var2,sep="_")
+Names_data = countData_timeCourse_datasets$Inj_R1_TP8$Name
+row.names(dataAccordingToTime)  = paste(Names_data,c(1:length(Names_data)),sep="_")
+
+data_accordingToTime = dataAccordingToTime[-which(rowSums(dataAccordingToTime)<20),]
+
+for(i in 1:nrow(allCombindations)){
+set1 = allCombindations$Var2[i]
+set2 = allCombindations$Var1[i]
+
+data_set1 = dataAccordingToTime[,grep(set1,colnames(dataAccordingToTime))]
+data_set2 = dataAccordingToTime[,grep(set2,colnames(dataAccordingToTime))]
+
+compareThis = cbind(data_set1, data_set2)
+condition = c(rep(set1,each = 7),rep(set2,each=7))
+
+type = "single-end"
+colData_table = cbind.data.frame(condition,type)
+row.names(colData_table) = colnames(compareThis)
+
+
+dds <- DESeqDataSetFromMatrix(countData = compareThis,colData = colData_table,design = ~ condition)
+colData(dds)$condition <- factor(colData(dds)$condition)
+dds <- DESeq(dds)
+
+
+allDEseqResults[[i]] = dds
+cat(i)
+}
+
+
+#maplots =  lapply(allDEseqResults,function(x) plotMA(x,ylim=c(-2,2),main="DESeq2"))
+
+##### now I have the results of these
+
+padj_all = do.call(cbind.data.frame,lapply(allDEseqResults,function(x) results(x)$padj))
+### TP1 - TP5 are preMZT
+
+library(reshape)
+library(ggplot2)
+
+plotPvals_ggplot = function(TP){
+TP_all  = padj_all[,grep(TP,colnames(padj_all))]
+TP_all_melt = melt(TP_all)
+ # ggplot(TP_all_melt,aes(value,group=variable,col=variable) ) + geom_density()
+
+p = ggplot(TP_all_melt,aes(x=variable,y=(value),group=variable,fill=variable)) + geom_violin() + ylab("pAdj") + xlab(" ")
+p = p + theme(axis.text.x = element_text(size=12,margin=margin(10,15,10,15,"pt")),axis.text.y = element_text(size=12,margin=margin(5,15,10,5,"pt")),axis.title  = element_text(size=12),legend.text=element_text(size=12),panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.ticks.length = unit(-0.25 , "cm"))  
+
+return(p)
+}
+
+pdf("/Volumes/groups/ameres/Pooja/Projects/zebrafishAnnotation/sequencingRun_december2017/analysis/annotation/differentialExpressionAnalysis/plot/pValueDistributions.pdf",height=4,width=9)
+plotPvals_ggplot(TP = "TP1")
+plotPvals_ggplot(TP = "TP2")
+plotPvals_ggplot(TP = "TP3")
+plotPvals_ggplot(TP = "TP4")
+plotPvals_ggplot(TP = "TP5")
+plotPvals_ggplot(TP = "TP6")
+plotPvals_ggplot(TP = "TP7")
+plotPvals_ggplot(TP = "TP8")
+plotPvals_ggplot(TP = "TP9")
+dev.off()
+
+
+colnames(padj_all)
+
+considerTheseComparisons = padj_all[,c("TP7_TP1","TP8_TP1","TP9_TP1","TP7_TP2","TP8_TP2","TP9_TP2")]
+checkSignificance = unlist(apply(considerTheseComparisons,1,function(x) length(which(x<0.05))))
+row.names(considerTheseComparisons) = row.names(dataAccordingToTime)
+considerTheseComparisons_significant = considerTheseComparisons[which(checkSignificance>1),]
+
+#### just get the RPMs of these and classify them..
+
+RPMs = do.call(cbind.data.frame,lapply(countData_timeCourse_datasets,function(x) x$ReadsCPM))
+toMatch <- c("TP1","TP2","TP7","TP8","TP9")
+
+matches <- unique (grep(paste(toMatch,collapse="|"), 
+                        colnames(RPMs), value=TRUE))
+
+
+#### averaging the the RPMs per time point 
+RPMS_timewise = vector("list",length(toMatch))
+names(RPMS_timewise) = toMatch
+for (i in 1:length(toMatch)){
+  
+  RPMS_i = RPMs[,grep(toMatch[i],colnames(RPMs))]
+  RPMS_timewise[[i]]= apply(RPMS_i,1,mean)
+}
+RPMsArranged = do.call(cbind.data.frame,RPMS_timewise)
+row.names(RPMsArranged) = row.names(dataAccordingToTime)
+
+
+RPMs_significant = RPMsArranged[row.names(RPMsArranged) %in% row.names(considerTheseComparisons_significant),]
+RPMs_significant$pre = (RPMs_significant$TP1 + RPMs_significant$TP2)/2
+RPMs_significant$post = (RPMs_significant$TP7 + RPMs_significant$TP8 + RPMs_significant$TP9)/3
+
+RPMs_significant$FC = RPMs_significant$post / RPMs_significant$pre
+
+RPMs_significant$classification = NA
+RPMs_significant$classification[which(RPMs_significant$FC>1.2)] <- "ZYGOTIC"
+RPMs_significant$classification[which(RPMs_significant$FC<0.8)] <- "MATERNAL"
+RPMs_significant$classification[-which(RPMs_significant$classification == "ZYGOTIC" | RPMs_significant$classification == "MATERNAL")] <- "STABLE"
+
+geneNames_RPM_significant = unlist(lapply(strsplit(row.names(RPMs_significant),"_",T),function(x) x[[1]]))
+
+RPMs_significant$geneName = geneNames_RPM_significant
+
+RPM_singificant_splitByGeneName  = split(RPMs_significant,RPMs_significant$geneName,T)
+RPM_singificant_splitByGeneName_multiple = RPM_singificant_splitByGeneName[which(unlist(lapply(RPM_singificant_splitByGeneName,nrow))>1)]
+
+RPM_singificant_splitByGeneName_multiple
+
+###### checking the fold changes of these counting windows
+# significantCWs = row.names(considerTheseComparisons_significant)
+
+# log2FoldChange_all = do.call(cbind.data.frame,lapply(allDEseqResults,function(x) results(x)$log2FoldChange))
+# names(log2FoldChange_all) = names(allDEseqResults)
+# row.names(log2FoldChange_all) =row.names(dataAccordingToTime)
+# significantLog2 = log2FoldChange_all[row.names(log2FoldChange_all) %in% significantCWs,]
+# significantLog2 = significantLog2[,c("TP7_TP1","TP8_TP1","TP9_TP1","TP7_TP2","TP8_TP2","TP9_TP2")]
+
+# significantLog2$meanFoldChange = apply(significantLog2,1,mean)
+
+# geneNames = unlist(lapply(strsplit(row.names(significantLog2),"_",T),function(x) x[[1]]))
+# significantLog2$names = geneNames
+# significantLog2_split = split(significantLog2,significantLog2$names,T)
+
+#  significantLog2_split_multiple = significantLog2_split[which(unlist(lapply(significantLog2_split,nrow))>1)]
+```

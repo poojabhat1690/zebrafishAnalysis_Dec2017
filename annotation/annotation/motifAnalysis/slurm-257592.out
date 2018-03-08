@@ -1,0 +1,416 @@
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = allNoPAS_SLAMdunkExperiment.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+	Using custom gene IDs for GO analysis
+	Parsing FASTA format files...
+	Found 33777 sequences
+	Found 46260 sequences
+
+	Progress: Step4 - removing redundant promoters
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+	Sequences processed:
+		Auto detected maximum sequence length of 36 bp
+		80037 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	743
+	0.25	1	746
+	0.3	2	3305
+	0.35	3	7222
+	0.4	4	11785
+	0.45	5	14590
+	0.5	6	13366
+	0.6	7	22567
+	0.7	8	5267
+	0.8	9	439
+	10	10	7
+	Bin	# Targets	# Background	Background Weight
+	0	725	18	55.163
+	1	694	52	18.279
+	2	3083	222	19.020
+	3	6102	1120	7.462
+	4	7838	3947	2.720
+	5	7179	7411	1.327
+	6	2703	10663	0.347
+	7	4805	17762	0.370
+	8	607	4660	0.178
+	9	38	401	0.130
+	10	3	4	1.027
+
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	80037 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	30.25%	30.40%	0.995
+		C	19.75%	19.60%	1.008
+		G	19.75%	19.60%	1.008
+		T	30.25%	30.40%	0.995
+	Autonormalization: 2-mers (16 total)
+		AA	10.22%	10.05%	1.017
+		CA	8.25%	7.59%	1.087
+		GA	5.83%	6.92%	0.842
+		TA	5.91%	5.36%	1.102
+		AC	6.44%	5.24%	1.229
+		CC	3.48%	3.68%	0.945
+		GC	4.04%	3.95%	1.023
+		TC	5.83%	6.92%	0.842
+		AG	5.98%	6.31%	0.947
+		CG	2.05%	2.17%	0.942
+		GG	3.48%	3.68%	0.945
+		TG	8.25%	7.59%	1.087
+		AT	7.61%	8.94%	0.852
+		CT	5.98%	6.31%	0.947
+		GT	6.44%	5.24%	1.229
+		TT	10.22%	10.05%	1.017
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	30.25%	30.20%	1.002
+		C	19.75%	19.80%	0.997
+		G	19.75%	19.80%	0.997
+		T	30.25%	30.20%	1.002
+	Autonormalization: 2-mers (16 total)
+		AA	10.22%	9.95%	1.027
+		CA	8.25%	8.13%	1.014
+		GA	5.83%	6.00%	0.972
+		TA	5.91%	5.67%	1.042
+		AC	6.44%	6.19%	1.042
+		CC	3.48%	3.62%	0.960
+		GC	4.04%	4.16%	0.972
+		TC	5.83%	6.00%	0.972
+		AG	5.98%	6.03%	0.992
+		CG	2.05%	2.14%	0.958
+		GG	3.48%	3.62%	0.960
+		TG	8.25%	8.13%	1.014
+		AT	7.61%	8.20%	0.928
+		CT	5.98%	6.03%	0.992
+		GT	6.44%	6.19%	1.042
+		TT	10.22%	9.95%	1.027
+	Autonormalization: 3-mers (64 total)
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+
+	Reading input files...
+	80037 total sequences read
+	922 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 922 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Preparing HTML output with sequence logos...
+		1 of 922 (1e-27)  Ik-1
+		2 of 922 (1e-23) BPC6(BBRBPC)/col-BPC6-DAP-Seq(GSE60143)/Homer
+		3 of 922 (1e-19) KLF10(Zf)/HEK293-KLF10.GFP-ChIP-Seq(GSE58341)/Homer
+		4 of 922 (1e-7) TFE3(bHLH)/MEF-TFE3-ChIP-Seq(GSE75757)/Homer
+		5 of 922 (1e-7) FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer
+		6 of 922 (1e-5) WUS1(Homeobox)/colamp-WUS1-DAP-Seq(GSE60143)/Homer
+		7 of 922 (1e-4) HSFB3(HSF)/colamp-HSFB3-DAP-Seq(GSE60143)/Homer
+		8 of 922 (1e-4) NRF(NRF)/Promoter/Homer
+		9 of 922 (1e-4) OCT:OCT(POU,Homeobox,IR1)/NPC-Brn2-ChIP-Seq(GSE35496)/Homer
+		10 of 922 (1e-4) HSF21(HSF)/col-HSF21-DAP-Seq(GSE60143)/Homer
+		11 of 922 (1e-3) Pax7(Paired,Homeobox)/Myoblast-Pax7-ChIP-Seq(GSE25064)/Homer
+		12 of 922 (1e-3) T1ISRE(IRF)/ThioMac-Ifnb-Expression/Homer
+		13 of 922 (1e-2) REM19(REM)/colamp-REM19-DAP-Seq(GSE60143)/Homer
+		14 of 922 (1e-2) RARg(NR)/ES-RARg-ChIP-Seq(GSE30538)/Homer
+		15 of 922 (1e-2) Hoxb4(Homeobox)/ES-Hoxb4-ChIP-Seq(GSE34014)/Homer
+		16 of 922 (1e-2) CTCF(Zf)/CD4+-CTCF-ChIP-Seq(Barski_et_al.)/Homer
+		17 of 922 (1e-2) SFP1/SacCer-Promoters/Homer
+
+	Progress: Step8 - De novo motif finding (HOMER)
+
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	================================================================================
+	Total number of Oligos: 136
+	Autoadjustment for sequence coverage in background: 1.48x
+
+	Oligos: 136 of 140 max
+	Tree  : 264 of 700 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using binomial scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 1 mismatches...
+
+	Screening oligos 136 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	=======================================================================================================================================
+		0.00% skipped, 100.00% checked (136 of 136), of those checked:
+		0.00% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 136 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	=======================================================================================================================================
+		0.00% skipped, 100.00% checked (136 of 136), of those checked:
+		0.00% not in target, 59.56% increased p-value, 41.91% high p-value
+	Reading input files...
+	80037 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: TATG... (-623.187)
+		Round 1: -984.84 TATG T:15410.0(36.63%),B:15107.9(25.69%),P:1e-427
+		Round 2: -984.84 TATG T:15410.0(36.63%),B:15107.9(25.69%),P:1e-427
+		=Final=: 0.00 TATG T:8044.0(23.82%),B:9127.2(26.58%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: GTGT... (-540.664)
+		Round 1: -540.66 GTGT T:21940.0(47.77%),B:25135.9(38.99%),P:1e-234
+		Round 2: -540.66 GTGT T:21940.0(47.77%),B:25135.9(38.99%),P:1e-234
+		=Final=: 0.00 GTGT T:10911.0(32.30%),B:15988.9(46.55%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: CATG... (-496.716)
+		Round 1: -583.86 CATG T:19985.0(44.66%),B:22423.3(35.65%),P:1e-253
+		Round 2: -583.86 CATG T:19985.0(44.66%),B:22423.3(35.65%),P:1e-253
+		=Final=: -0.00 CATG T:5057.0(14.97%),B:5492.1(15.99%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: CATT... (-298.060)
+		Round 1: -329.63 CATT T:21684.0(47.38%),B:26418.0(40.51%),P:1e-143
+		Round 2: -329.63 CATT T:21684.0(47.38%),B:26418.0(40.51%),P:1e-143
+		=Final=: 0.00 CATT T:12045.0(35.66%),B:15710.0(45.74%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: TTTT... (-244.486)
+		Round 1: -244.49 TTTT T:33104.0(62.47%),B:42455.4(56.59%),P:1e-106
+		Round 2: -244.49 TTTT T:33104.0(62.47%),B:42455.4(56.59%),P:1e-106
+		=Final=: 0.00 TTTT T:15086.0(44.66%),B:19449.2(56.63%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	6 of 25 Initial Sequence: TTAG... (-204.339)
+		Round 1: -427.15 TTAG T:17405.0(40.27%),B:20157.4(32.72%),P:1e-185
+		Round 2: -427.15 TTAG T:17405.0(40.27%),B:20157.4(32.72%),P:1e-185
+		=Final=: 0.00 TTAG T:4966.0(14.70%),B:6746.3(19.64%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	7 of 25 Initial Sequence: TAAG... (-196.765)
+		Round 1: -356.08 MAAT T:24378.0(51.41%),B:29687.3(44.21%),P:1e-154
+		Round 2: -403.59 TAAG T:13471.0(32.89%),B:15298.5(25.97%),P:1e-175
+		Round 3: -403.59 TAAG T:13471.0(32.89%),B:15298.5(25.97%),P:1e-175
+		=Final=: 0.00 TAAG T:4291.0(12.70%),B:5706.5(16.62%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	8 of 25 Initial Sequence: TAAC... (-122.533)
+		Round 1: -301.93 TAAC T:15148.0(36.14%),B:18107.2(29.95%),P:1e-131
+		Round 2: -303.00 AAAT T:16387.0(38.44%),B:19717.0(32.13%),P:1e-131
+		Round 3: -363.02 CAAT T:20352.0(45.26%),B:24405.4(38.11%),P:1e-157
+		Round 4: -363.02 CAAT T:20352.0(45.26%),B:24405.4(38.11%),P:1e-157
+		=Final=: 0.00 CAAT T:6384.0(18.90%),B:9163.4(26.68%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	9 of 25 Initial Sequence: TGTG... (-125.550)
+		Round 1: -294.55 TGTR T:18791.0(42.67%),B:22936.6(36.29%),P:1e-127
+		Round 2: -294.55 TGTR T:18791.0(42.67%),B:22936.6(36.29%),P:1e-127
+		=Final=: 0.00 TGTR T:4947.0(14.65%),B:7887.6(22.97%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	10 of 25 Initial Sequence: GTAT... (-280.101)
+		Round 1: -410.17 GTAT T:11503.0(28.86%),B:12778.8(22.21%),P:1e-178
+		Round 2: -576.91 ATTT T:22391.0(48.47%),B:25458.7(39.37%),P:1e-250
+		Round 3: -576.91 ATTT T:22391.0(48.47%),B:25458.7(39.37%),P:1e-250
+		=Final=: 0.00 ATTT T:5982.0(17.71%),B:9412.5(27.41%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	11 of 25 Initial Sequence: TAGA... (-168.577)
+		Round 1: -369.09 TAGM T:6795.0(18.22%),B:7098.6(13.02%),P:1e-160
+		Round 2: -369.09 TAGM T:6795.0(18.22%),B:7098.6(13.02%),P:1e-160
+		=Final=: 0.00 TAGM T:2858.0(8.46%),B:4220.7(12.29%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	12 of 25 Initial Sequence: TAGG... (-136.201)
+		Round 1: -393.81 TWRY T:18183.0(41.63%),B:21377.1(34.31%),P:1e-171
+		Round 2: -539.42 GTAG T:7080.0(18.91%),B:6868.3(12.63%),P:1e-234
+		Round 3: -658.04 GTTT T:17486.0(40.41%),B:18944.3(31.09%),P:1e-285
+		Round 4: -661.87 GTAA T:14321.0(34.56%),B:15081.1(25.66%),P:1e-287
+		Round 5: -661.87 GTAA T:14321.0(34.56%),B:15081.1(25.66%),P:1e-287
+		=Final=: 0.00 GTAA T:2491.0(7.37%),B:4577.3(13.33%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	13 of 25 Initial Sequence: CGTA... (-70.824)
+		Round 1: -546.61 MGTA T:11219.0(28.26%),B:11806.8(20.71%),P:1e-237
+		Round 2: -546.61 MGTA T:11219.0(28.26%),B:11806.8(20.71%),P:1e-237
+		=Final=: 0.00 MGTA T:2644.0(7.83%),B:4152.6(12.09%),P:1e0
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	80037 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 13 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: /scratch/pooja/allNoPAS_SLAMdunkExperiment.fasta/homerMotifs.motifs4
+
+	(Motifs in homer2 format)
+	Determining similar motifs... 13 reduced to 5 motifs
+	Outputing HTML and sequence logos for motif comparison...
+	Checking de novo motifs against known motifs...
+	Formatting HTML page...
+		1 of 5 (1e0) similar to Tv_0259(RRM)/Trichomonas_vaginalis-RNCMPT00259-PBM/HughesRNA(0.839)
+		2 of 5 (1e0) similar to HNRNPL(RRM)/Homo_sapiens-RNCMPT00091-PBM/HughesRNA(0.901)
+		3 of 5 (1e0) similar to PABP(RRM)/Drosophila_melanogaster-RNCMPT00139-PBM/HughesRNA(0.900)
+		4 of 5 (1e0) similar to SF1(KH)/Drosophila_melanogaster-RNCMPT00065-PBM/HughesRNA(0.829)
+		5 of 5 (1e0) similar to SPL4/MA1058.1/Jaspar(0.864)
+	Job finished
+
+mkdir: cannot create directory ‘/scratch/pooja/noPASaccepted_sequences1dpf.fasta’: File exists
+
+Selected Options:
+	Input file = targets.fa
+	Promoter Set = fasta
+	Output Directory = motifResults/
+	Will use FASTA files for motif finding
+		Target Sequences = targets.fa
+		Background Sequences = background.fa
+!!!!
+Could not open file targets.fa
+!!!!
+
+Selected Options:
+	Input file = noPASaccepted_sequences1dpf.fasta_proper.fasta
+	Promoter Set = fasta
+	Output Directory = /scratch/pooja/noPASaccepted_sequences1dpf.fasta
+	Will use FASTA files for motif finding
+		Target Sequences = noPASaccepted_sequences1dpf.fasta_proper.fasta
+		Background Sequences = /groups/ameres/Pooja//backgroundSample.fasta
+	Using Binomial Distribution for p-values (instead of hypergeometric)
+	Motif length set at 4, 
+	Using custom gene IDs for GO analysis
+	Parsing FASTA format files...
+	Found 2960 sequences
+	Found 46260 sequences
+
+	Progress: Step4 - removing redundant promoters
+
+	Progress: Step5 - adjusting background sequences for GC/CpG content...
+
+	Sequences processed:
+		Auto detected maximum sequence length of 21 bp
+		49220 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	421
+	0.25	1	522
+	0.3	2	759
+	0.35	3	1650
+	0.4	4	4406
+	0.45	5	7674
+	0.5	6	10829
+	0.6	7	17875
+	0.7	8	4676
+	0.8	9	403
+	10	10	5
+	Bin	# Targets	# Background	Background Weight
+	0	403	18	349.902
+	1	470	52	141.256
+	2	537	222	37.804
+	3	530	1120	7.396
+	4	459	3947	1.817
+	5	263	7411	0.555
+	6	166	10663	0.243
+	7	113	17762	0.099
+	8	16	4660	0.054
+	9	2	401	0.078
+	10	1	4	3.907
+
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	49220 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	34.42%	34.47%	0.998
+		C	15.58%	15.53%	1.003
+		G	15.58%	15.53%	1.003
+		T	34.42%	34.47%	0.998
+	Autonormalization: 2-mers (16 total)
+		AA	14.07%	13.25%	1.061
+		CA	6.96%	6.77%	1.027
+		GA	5.10%	5.68%	0.897
+		TA	7.50%	8.44%	0.888
+		AC	5.64%	4.93%	1.143
+		CC	2.41%	2.34%	1.028
+		GC	2.75%	2.65%	1.038
+		TC	5.10%	5.68%	0.897
+		AG	5.31%	5.23%	1.016
+		CG	1.14%	1.30%	0.877
+		GG	2.41%	2.34%	1.028
+		TG	6.96%	6.77%	1.027
+		AT	9.66%	11.20%	0.863
+		CT	5.31%	5.23%	1.016
+		GT	5.64%	4.93%	1.143
+		TT	14.07%	13.25%	1.061
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /scratch/pooja/noPASaccepted_sequences1dpf.fasta/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	34.42%	33.91%	1.015
+		C	15.58%	16.09%	0.969
+		G	15.58%	16.09%	0.969
+		T	34.42%	33.91%	1.015
+	Autonormalization: 2-mers (16 total)
+		AA	14.07%	13.65%	1.031
+		CA	6.96%	7.10%	0.980
+		GA	5.10%	5.34%	0.954
+		TA	7.50%	7.49%	1.002
+		AC	5.64%	5.40%	1.043
+		CC	2.41%	2.53%	0.950
+		GC	2.75%	2.89%	0.954
+		TC	5.10%	5.34%	0.954
+		AG	5.31%	5.28%	1.007
+		CG	1.14%	1.27%	0.892
+		GG	2.41%	2.53%	0.950
+		TG	6.96%	7.10%	0.980
+		AT	9.66%	9.75%	0.991
+		CT	5.31%	5.28%	1.007
+		GT	5.64%	5.40%	1.043
+		TT	14.07%	13.65%	1.031
+	Autonormalization: 3-mers (64 total)
+
+	Progress: Step6 - Gene Ontology Enrichment Analysis
+	Skipping...
+
+	Progress: Step7 - Known motif enrichment
+
+	Reading input files...
+	49220 total sequences read
+	922 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 922 motif(s)
+	|0%                                    50%                                  100%|
+	=================slurmstepd: error: *** JOB 257592 ON cn-11 CANCELLED AT 2018-03-01T14:21:10 ***
